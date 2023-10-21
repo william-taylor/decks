@@ -1,10 +1,10 @@
 {
   "name": "decks",
   "version": "1.0.0",
-  "description": "Slide decks built with Reveal.js",
-  "main": "index.js",
+  "description": "Decks built with Reveal.js",
   "scripts": {
-    "start": "parcel slides/test.html"
+    "start": "parcel serve decks/**/index.html",
+    "build": "parcel build decks/**/index.html"
   },
   "repository": {
     "type": "git",
