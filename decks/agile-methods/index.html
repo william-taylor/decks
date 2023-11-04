@@ -12,44 +12,74 @@
 
 		<link rel="stylesheet" href="../../node_modules/reveal.js/dist/reset.css">
 		<link rel="stylesheet" href="../../node_modules/reveal.js/dist/reveal.css">
-		<link rel="stylesheet" href="../../node_modules/reveal.js/dist/theme/white.css" id="theme">
+		<link rel="stylesheet" href="../../node_modules/reveal.js/dist/theme/black.css" id="theme">
+
+        <style>
+            .reveal-viewport {
+                background-color: #012148 !important   
+            }
+            
+            .reveal .slide-background {
+                background-color: #012148 !important
+            }
+
+            .reveal .progress {
+                color: #efefef;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+                position: fixed;
+                top: 25;
+                left: 25;
+            }
+        </style>
 	</head>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
             <section data-name="intro">
-                <h3>Agile Methods - Case Study</h3>
+                <h1>Case Study</h1>
                 <p>
                     Going FAST - When Scrum is slowing you down
                 </p>
             </section>
 
             <section data-name="background">
-                <h3>Background</h3>
+                <h2>Background</h2>
 
                 <p>
+                    <b>The author:</b> Per Beining joined a financial services firm as a Scrum Master and 
+                    transitioned into a Project Manager.
+                </p>
 
+                <p>
+                    <b>The goal:</b> Move a system from private to public cloud. Reimplementing features and 
+                    configuraiton so it could be run on a a public cloud platform.
+                </p>
+
+                <p>
+                    <b>The problem:</b> 6 weeks from their first deadline they were not going to make it. The 
+                    author looked to alternative methods to get them back on track.
                 </p>
             </section>
 
             <section data-name="class-discuss">
-                <h3>Class Discussion</h3>
-                <ul>
-                    <li>What should the organisation do?</li>
-                </ul>
+                <h1>Class Discussion</h1>
+                <p>What should the organisation do?</p>
             </section>
 
             <section data-name="solution">
-                <h3>Solution</h3>
-
+                <h2>Solution</h2>
                 <p>
 
                 </p>
             </section>
 
             <section data-name="outcome">
-                <h3>Outcome</h3>
+                <h2>Outcome</h2>
 
                 <p>
 
@@ -57,16 +87,19 @@
             </section>
 
             <section data-name="joint-discuss">
-                <h3>Joint Discussion</h3>
-                <ul>
-                    <li>Did what they do make sense? </li>
-                    <li>Would you recommend something different? </li>
-                    <li>How does this compare to things in other cases? </li>
-                </ul>
+                <h1>Joint Discussion</h1>
+                <p>
+                    Did what they do make sense? Would you 
+                    recommend something different? How does 
+                    this compare to other cases? 
+                </p>
             </section>
         </div> 
+        
     </div>
         
+    <img class="logo" src="logo.png" />
+
     <script src="../../node_modules/reveal.js/dist/reveal.js"></script>
     <script src="../../node_modules/reveal.js/plugin/zoom/zoom.js"></script>
     <script src="../../node_modules/reveal.js/plugin/notes/notes.js"></script>
@@ -77,6 +110,9 @@
             progress: true,
             center: true,
             hash: true,
+
+            minScale: 0.2,
+            maxScale: 1.0,
 
             plugins: [ RevealZoom, RevealNotes, RevealSearch ]
         });
